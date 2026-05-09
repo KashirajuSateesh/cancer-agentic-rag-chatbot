@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Medicare out-of-pocket costs for cancer patients",
+    "relevant_pages": [
+      "acscan-medicare-chartbook.pdf::40",
+      "acscan-medicare-chartbook.pdf::41",
+      "acscan-medicare-chartbook.pdf::43"
+    ]
+  },
+  {
+    "question": "What does the Cancer-attributable Annualized Average Costs figure explain?",
+    "relevant_pages": [
+      "acscan-medicare-chartbook.pdf::38",
+      "acscan-medicare-chartbook.pdf::3",
+      "acscan-medicare-chartbook.pdf::46"
+    ]
+  },
+  {
+    "question": "What are cancer risk factors?",
+    "relevant_pages": [
+      "cancer-facts-and-figures-2021.pdf::2",
+      "cancer-facts-and-figures-2021.pdf::3",
+      "cancer-facts-and-figures-2021.pdf::4"
+    ]
+  },
+  {
+    "question": "Why are cancer treatment costs increasing?",
+    "relevant_pages": [
+      "cancer-facts-and-figures-2021.pdf::10",
+      "cancer-facts-and-figures-2021.pdf::11",
+      "acscan-medicare-chartbook.pdf::27"
+    ]
+  },
+  {
+    "question": "What is lung cancer screening coverage under Medicare?",
+    "relevant_pages": [
+      "acscan-medicare-chartbook.pdf::26",
+      "acscan-medicare-chartbook.pdf::28",
+      "acscan-medicare-chartbook.pdf::30"
+    ]
+  },
+  {
+    "question": "What data sources are used in cancer informatics?",
+    "relevant_pages": [
+      "Informatics at the frontier of cancer research.pdf::3",
+      "Informatics at the frontier of cancer research.pdf::4",
+      "Informatics at the frontier of cancer research.pdf::10"
+    ]
+  },
+  {
+    "question": "What is the role of imaging data in cancer informatics?",
+    "relevant_pages": [
+      "Informatics at the frontier of cancer research.pdf::4",
+      "Informatics at the frontier of cancer research.pdf::8",
+      "Informatics at the frontier of cancer research.pdf::12"
+    ]
+  },
+  {
+    "question": "What does the document say about colorectal cancer screening?",
+    "relevant_pages": [
+      "acscan-medicare-chartbook.pdf::29",
+      "acscan-medicare-chartbook.pdf::30",
+      "acscan-medicare-chartbook.pdf::31"
+    ]
+  },
+  {
+    "question": "What are the costs associated with cancer treatment and care?",
+    "relevant_pages": [
+      "cancer-facts-and-figures-2021.pdf::10",
+      "acscan-medicare-chartbook.pdf::36",
+      "acscan-medicare-chartbook.pdf::37"
+    ]
+  },
+  {
+    "question": "What are Medicare beneficiaries required to pay for cancer treatment?",
+    "relevant_pages": [
+      "acscan-medicare-chartbook.pdf::40",
+      "acscan-medicare-chartbook.pdf::41",
+      "acscan-medicare-chartbook.pdf::43"
+    ]
+  }
+]
