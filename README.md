@@ -85,6 +85,120 @@ It includes multiple decision-making and orchestration steps:
 > Note: This project currently implements agentic behavior through modular pipeline logic. Full LangGraph orchestration is planned as future work.
 
 ---
+## Project Setup
+
+Follow these steps to run the Cancer Research Agentic RAG Chatbot locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/KashirajuSateesh/cancer-agentic-rag-chatbot.git
+cd cancer-agentic-rag-chatbot
+```
+
+### 2. Create and Activate Virtual Environment
+
+#### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Create `.env` File
+
+Create a `.env` file in the project root folder and add your OpenAI API key.
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+> Do not commit the `.env` file to GitHub.
+
+### 5. Add PDF Files
+
+Place your PDF documents inside:
+
+```text
+data/pdfs/
+```
+
+Example:
+
+```text
+data/pdfs/cancer-facts-and-figures-2021.pdf
+data/pdfs/acscan-medicare-chartbook.pdf
+data/pdfs/Informatics at the frontier of cancer research.pdf
+```
+
+### 6. Run the Ingestion Pipeline
+
+This step loads PDFs, chunks the text, creates embeddings, and stores them in FAISS.
+
+```bash
+python src/ingest.py
+```
+
+After successful ingestion, the FAISS vectorstore will be created here:
+
+```text
+vectorstore/faiss_index/
+```
+
+### 7. Run the Streamlit Chatbot
+
+```bash
+streamlit run app.py
+```
+
+Open the local URL shown in the terminal.
+
+Usually:
+
+```text
+http://localhost:8501
+```
+
+### 8. Run Retrieval Evaluation Metrics
+
+To calculate Precision@K, Recall@K, Hit Rate, MRR, and NDCG:
+
+```bash
+python src/evaluate_retrieval.py
+```
+
+This uses:
+
+```text
+data/eval_questions.json
+```
+
+---
+
+## Quick Start: Windows
+
+```bash
+git clone https://github.com/KashirajuSateesh/cancer-agentic-rag-chatbot.git
+cd cancer-agentic-rag-chatbot
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+# Create .env file manually and add:
+# OPENAI_API_KEY=your_openai_api_key_here
+
+# Add PDFs inside data/pdfs/
+
+python src/ingest.py
+streamlit run app.py
+```
+---
 
 ## Project Architecture
 
@@ -114,3 +228,4 @@ flowchart TD
 
     M --> N[Final Answer with Sources]
     N --> O[Observability Logs and Debug Dashboard]
+
